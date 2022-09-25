@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite" verbose="0">
+    <listeners>
+        <listener class-name="ua.ithillel.testng.retry.AnnotationTransformer"></listener>
+        <listener class-name="ua.ithillel.testng.listeners.Listener"></listener>
+    </listeners>
+    <test name="RetryTest">
+        <classes>
+            <class name="ua.ithillel.testng.RetryTest"></class>
+        </classes>
+    </test>
+</suite>
